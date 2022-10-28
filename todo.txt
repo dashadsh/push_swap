@@ -1,0 +1,12 @@
+KO, stdout and stderr must be empty
+if stack is sorted
+
+
+KO, stderr must be empty
+-2147483647 -2147483648 2147483647
+
+
+KO, stderr must be empty
+-2147483648 -2147483647 0 9487 2147483647 
+
+how to check data on stderr
