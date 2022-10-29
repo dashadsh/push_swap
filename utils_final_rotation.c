@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_final_rotation.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:50:41 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:54:15 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	final_rotation(t_node **head)
@@ -7,7 +19,7 @@ void	final_rotation(t_node **head)
 	lowest_p = lowest_index_position(head);
 	if (lowest_p <= stack_size(*head) / 2)
 	{
-		while(lowest_p)
+		while (lowest_p)
 		{
 			rotate(head, 'a');
 			lowest_p--;
@@ -15,13 +27,7 @@ void	final_rotation(t_node **head)
 	}
 	else
 	{
-		r_rotate(head, 'a'); // not &
+		r_rotate(head, 'a');
 		lowest_p++;
 	}
 }
-//incompatible pointer types passing 't_node ***' (aka 'struct s_node ***') to parameter of type 't_node **' (aka 'struct s_node **'); remove & [-Wincompatible-pointer-types]
-//                 r_rotate(&head, 'a');
-//                          ^~~~~
-// ./push_swap.h:62:24: note: passing argument to parameter 'head' here
-// void    r_rotate(t_node **head, char c);
-//                           ^

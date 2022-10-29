@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 19:28:49 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/29 00:24:09 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/29 10:50:19 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,9 +65,6 @@ void	add_index(t_node **head, int stack_size);
 /* push_swap.c */
 void	sort_for_more_then_three(t_node **stack_a, t_node **stack_b); //NEW
 int		main(int ac, char **av);
-
-/* utils_array.c  - FOR TESTING */
-int		*array_creator(int ac, char **av);
 
 /* utils_ll.c */
 t_node	*ft_lstlast(t_node *head);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_positions.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:52:17 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:52:26 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	calculate_positions(t_node **head)
@@ -7,7 +19,7 @@ void	calculate_positions(t_node **head)
 
 	ptr = *head;
 	i = 0;
-	while (ptr) // not *ptr
+	while (ptr)
 	{
 		ptr->position = i;
 		i++;
@@ -83,7 +95,7 @@ void	add_target_positions(t_node **head_a, t_node **head_b)
 	t_node	*tmp_b;
 
 	tmp_b = *head_b;
-	calculate_positions(head_a); // not calculated before
+	calculate_positions(head_a);
 	calculate_positions(head_b);
 	while (tmp_b)
 	{

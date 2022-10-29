@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_prepare.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:52:31 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:52:36 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	prepare_a(t_node **head_a, int cost_a)
@@ -35,6 +47,6 @@ void	prepare_two_stacks(t_node **head_a, t_node **head_b,
 		cost_a++;
 		cost_b++;
 	}
-	prepare_a(head_a, cost_a); //SHOULD BE HERE _ NOT IN DO MOVE
+	prepare_a(head_a, cost_a);
 	prepare_b(head_b, cost_b);
 }

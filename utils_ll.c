@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_ll.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:51:39 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:53:59 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 t_node	*ft_lstlast(t_node *head)
@@ -30,9 +42,8 @@ t_node	*frontal_insertion(t_node *head, t_node *new)
 	return (new);
 }
 
-/* create an empty stack */
-t_node *create_empty_stack(void)
-{ //malloc anyway??
+t_node	*create_empty_stack(void)
+{
 	t_node	*head;
 
 	head = NULL;
@@ -49,7 +60,7 @@ t_node	*create_filled_stack(int ac, char **av)
 	return (head);
 }
 
-// FOR TESTING
+/*
 void	print_list(t_node *start_node)
 {
 	t_node	*tmp;
@@ -62,7 +73,4 @@ void	print_list(t_node *start_node)
 	}
 	printf("\n");
 }
-// while (tmp != NULL) // ALSO WORKS
-// while (tmp->value != NULL) //1 2 3, then SEGFAULT
-// while (tmp->value) //1 2 3, then SEGFAULT
-
+*/

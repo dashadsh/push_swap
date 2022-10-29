@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_push_all_to_b.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:52:39 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:54:38 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 /*
@@ -17,7 +29,7 @@ void	push_to_b_except_three(t_node **head_a, t_node **head_b)
 		if ((*head_a)->index <= stacksize_a / 2)
 		{
 			push(head_a, head_b, 'b');
-			pushed++; 
+			pushed++;
 		}
 		else
 			rotate(head_a, 'a');

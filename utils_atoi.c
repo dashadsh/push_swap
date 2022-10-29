@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_atoi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:50:26 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:50:27 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 int	ft_atoi_ps(const char *s)
@@ -20,7 +32,7 @@ int	ft_atoi_ps(const char *s)
 	}
 	if (value * sign < -2147483648 || value * sign > 2147483647)
 	{
-		write(2, "Error\n", 6); // should we free smth??
+		write(2, "Error\n", 6);
 		exit(0);
 	}
 	return (sign * value);

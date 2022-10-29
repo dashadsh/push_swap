@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_triplesort.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/29 10:52:45 by dgoremyk          #+#    #+#             */
+/*   Updated: 2022/10/29 10:55:49 by dgoremyk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 /*
@@ -30,9 +42,9 @@ int	find_max_value(t_node *head)
 void	triplesort(t_node **head)
 {
 	int		maxvalue;
-	// if (is_sorted_stack(*head))
-	if ((*head)->value < (*head)->next->value &&
-		(*head)->next->value < (*head)->next->next->value)
+
+	if ((*head)->value < (*head)->next->value
+		&& (*head)->next->value < (*head)->next->next->value)
 		return ;
 	maxvalue = find_max_value(*head);
 	if ((*head)->value == maxvalue)
