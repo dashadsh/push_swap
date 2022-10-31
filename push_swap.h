@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 19:28:49 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/31 13:07:41 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/31 13:37:30 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ int		invalid_argument(char **av);
 int		duplicate_found(char **av);
 int		is_sorted(char **av);
 
-void	max_min_int_checker(char **av); //NEW
-void	input_checker(int ac, char **av); //NEW
+void	max_min_int_checker(char **av);
+void	input_checker(int ac, char **av);
 
 /* utils_instructions.c */
 void	push(t_node **head_a, t_node **head_b, char c);
