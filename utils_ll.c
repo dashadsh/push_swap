@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:51:39 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/29 10:53:59 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/31 11:30:19 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ t_node	*create_filled_stack(int ac, char **av)
 	return (head);
 }
 
-/*
+
 void	print_list(t_node *start_node)
 {
 	t_node	*tmp;
@@ -73,4 +73,3 @@ void	print_list(t_node *start_node)
 	}
 	printf("\n");
 }
-*/
