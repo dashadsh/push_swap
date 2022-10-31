@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:51:39 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/31 11:30:19 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/31 12:55:38 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,11 @@ t_node	*create_node(int number)
 	if (!head)
 		return (NULL);
 	head->value = number;
+	head->index = 0;
+	head->position = 0;
+	head->target_position = 0;
+	head->cost_a = 0;
+	head->cost_b = 0;
 	head->next = NULL;
 	return (head);
 }
