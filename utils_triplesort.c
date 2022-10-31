@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:52:45 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/29 10:55:49 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/31 13:07:16 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@
 3 1 2 ra  1 2 3 
 3 2 1 ra  2 1 3 sa 1 2 3
 
-if value of the first number is highest => ra
-if value of the second number is highest => rra,
-then, if the value of the first number is bigger than 
-the value of the second number => sa.
+if first is highest => ra.
+if second is highest => rra,
+then, if first is bigger than second => sa.
 */
 
 int	find_max_value(t_node *head)

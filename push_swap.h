@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 19:28:49 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/31 12:06:50 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/31 13:07:41 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ void	add_index(t_node **head, int stack_size);
 
 /* push_swap.c */
 void	bigsort(t_node **stack_a, t_node **stack_b);
-//NEW
 int		main(int ac, char **av);
 
 /* utils_ll.c */
@@ -108,6 +107,5 @@ void	final_rotation(t_node **head);
 /* utils_free.c */
 void	free_list(t_node **head);
 void	free_lists(t_node **head_a, t_node **head_b);
-// void	error_exit(t_node **head_a, t_node **head_b);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:49:49 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/10/31 12:08:33 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/10/31 13:06:14 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	main(int ac, char **av)
 			bigsort(&stack_a, &stack_b);
 		final_rotation(&stack_a);
 	}
-	// print_list(stack_a);
 	free_lists(&stack_a, &stack_b);
 	return (0);
 }
